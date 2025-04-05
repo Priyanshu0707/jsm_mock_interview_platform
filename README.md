@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PrepWise - AI Mock Interview Platform
 
-## Getting Started
+PrepWise is an AI-powered mock interview platform designed to help users prepare for technical interviews. It provides real-time voice-assisted interview sessions and generates tailored interview questions using Google Gemini. The platform leverages Firebase for authentication and storage, and it is built using Next.js with ShadCN components for a modern and responsive UI.
 
-First, run the development server:
+## 🚀 Features
+- **AI-Powered Interview Questions**: Uses Google Gemini to generate intelligent and relevant interview questions.
+- **Voice Assistance**: Integrated with Vapi.ai for real-time voice responses and interaction.
+- **Secure Authentication**: Firebase Authentication for user login and access control.
+- **Cloud Storage**: Firebase Storage for storing user-related data.
+- **Modern UI**: Built with Next.js and ShadCN components for a sleek and responsive design.
+- **Deployed on Vercel**: Ensuring high availability and performance.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🛠️ Tech Stack
+- **Frontend**: Next.js, ShadCN components
+- **AI Integration**: Google Gemini
+- **Voice Assistance**: Vapi.ai
+- **Authentication & Storage**: Firebase Authentication, Firebase Storage
+- **Deployment**: Vercel
+
+## 📦 Installation
+To set up the project locally, follow these steps:
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/Priyanshu0707/jsm_mock_interview_platform
+   cd jsm_mock_interview_platform
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Set up environment variables:
+   Create a `.env.local` file and add your Firebase and API keys:
+   ```sh
+   NEXT_PUBLIC_FIREBASE_API_KEY=your_api_key
+   NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_auth_domain
+   NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
+   NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your_storage_bucket
+   NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+   NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id
+   NEXT_PUBLIC_GEMINI_API_KEY=your_gemini_api_key
+   NEXT_PUBLIC_VAPI_API_KEY=your_vapi_api_key
+   ```
+4. Run the development server:
+   ```sh
+   npm run dev
+   ```
+   The app will be available at `http://localhost:3000`.
+
+## 🚀 Deployment
+To deploy on Vercel, run:
+```sh
+vercel
 ```
+Or, use the Vercel dashboard to connect and deploy the repository.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🤝 Contributing
+Contributions are welcome! If you have suggestions or want to improve the platform, feel free to fork the repository and submit a pull request.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📄 License
+This project is licensed under the MIT License.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📬 Contact
+For any queries or suggestions, reach out via GitHub Issues.
 
-## Learn More
+---
+**Live Demo**: [PrepWise on Vercel](https://jsm-mock-interview-pla-git-32a91e-priyanshu-s-projects-98364364.vercel.app/)
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
